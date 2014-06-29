@@ -3,7 +3,10 @@ html, body {
   height: 100%;
 }
 body {
-  color: #;
+  background-color: #201c1e;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fbf0f6;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -14,15 +17,17 @@ body {
 -------------------------------------------------------------------------*/
 
 h1 {
-  font-family: 'RockwellStd', Helvetica, sans-serif;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
   font-size: 2.625rem;
+  font-weight: 700;
   line-height: 1.8125rem;
   margin-bottom: 0.625rem;
   text-transform: uppercase;
 }
 h2 {
-  font-family: 'RockwellStd', Helvetica, sans-serif;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
   font-size: 1.8125rem;
+  font-weight: 300;
   line-height: 1.3125rem;
   margin-bottom: 1.3125rem;
 }
@@ -30,12 +35,22 @@ em {
   font-weight: 100italic;
 }
 a {
+  color: #00c3ff;
+  display: block;
+  margin-bottom: 0.3rem;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
+.secondary {
+  color: #66635c;
+}
 .button {
-  background-color: #444;
+  background-color: #00c3ff;
   border-radius: 5px;
-  color: white;
+  color: #201c1e;
+  display: inline-block;
   font-weight: 400;
   margin-bottom: 1.8125rem;
   padding: 5px 10px;
@@ -44,11 +59,6 @@ a {
 @media only screen and (min-width: 600px) {
   h1 {
     font-size: 1.8125rem;
-  }
-}
-
-@media only screen and (min-width: 690px) {
-  h1 {
   }
 }
 
@@ -62,24 +72,33 @@ header {
   margin-bottom: 2.625rem;
 }
 header img {
-  width: 100%;
+  border: 1px solid #66635c;
   height: auto;
+  width: 100%;
   margin-bottom: 1.8125rem;
 }
 dl {
   margin-bottom: 2.625rem;
 }
 dd {
-  width: 21%;
-  padding: 0 3% 3% 0;
+  cursor: pointer;
   display: inline-block;
+  padding: 0 3% 3% 0;
+  width: 20%;
 }
 dd img {
+  border: 1px solid #66635c;
+  border-radius: 5px;
   width: 100%;
 }
+dd img.selected  {
+  border: 1px solid #00c3ff;
+}
 audio {
+  border: 1px solid #66635c;
+  border-radius: 5px;
   display: block;
-  margin-bottom: 1.8125rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
@@ -117,31 +136,11 @@ audio {
   audio {
     display: inline-block;
     margin-right: 10px;
-    width: 50%;
+    width: 62%;
     vertical-align: top;
   }
-  a {
+  .button {
     display: inline-block;
     vertical-align: top;
   }
-}
-
-/* FONTS
--------------------------------------------------------------------------*/
-
-@font-face {
-  font-family: 'RockwellStdLight';
-  src: url('rockwellstd-light.eot');
-  src: url('rockwellstd-light.eot') format('embedded-opentype'),
-       url('rockwellstd-light.woff') format('woff'),
-       url('rockwellstd-light.ttf') format('truetype'),
-       url('rockwellstd-light.svg#RockwellStdLight') format('svg');
-}
-@font-face {
-  font-family: 'RockwellStd';
-  src: url('rockwellstd.eot');
-  src: url('rockwellstd.eot') format('embedded-opentype'),
-       url('rockwellstd.woff') format('woff'),
-       url('rockwellstd.ttf') format('truetype'),
-       url('rockwellstd.svg#RockwellStd') format('svg');
 }
